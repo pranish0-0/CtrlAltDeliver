@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Privacy Policy | Ctrl Alt Deliver</title>
+
+        <style>
+            :root {
+                --color-primary: #58bc82;
+                --color-dark: #707070;
+                --color-light: #efefef;
+                --color-border: #dcdcdc;
+                --color-input-bg: #9c9c9c30;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            body {
+                background: linear-gradient(to bottom right, #ffffff, var(--color-light));
+                color: var(--color-dark);
+                line-height: 1.8;
+            }
+
+            /* ─── HEADER / NAV ─────────────────────────────────────────── */
+            header {
+                width: 100%;
+                height: 80px;
+                padding: 0 40px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background: #ffffff;
+                border-bottom: 1px solid #e5e5e5;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+            }
+
+            .logo-wrap {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+            }
+
+            .logo-wrap img {
+                width: 150px;
+                height: auto;
+                display: block;
+            }
+
+            /* Hamburger — hidden on desktop */
+            .hamburger {
+                display: none;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 28px;
+                height: 20px;
+                background: none;
+                border: none;
+                cursor: pointer;
+                padding: 0;
+                z-index: 1100;
+            }
+
+            .hamburger span {
+                display: block;
+                width: 100%;
+                height: 3px;
+                background: var(--color-dark);
+                border-radius: 3px;
+                transition: all 0.35s ease;
+                transform-origin: center;
+            }
+
+            /* Animated X when open */
+            .hamburger.open span:nth-child(1) { transform: translateY(8.5px) rotate(45deg); }
+            .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+            .hamburger.open span:nth-child(3) { transform: translateY(-8.5px) rotate(-45deg); }
+
+            .navbar {
+                display: flex;
+                align-items: center;
+            }
+
+            .navbar ul {
+                display: flex;
+                align-items: center;
+                gap: 14px;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .navbar ul li a {
+                text-decoration: none;
+                color: #666;
+                font-size: 15px;
+                font-weight: 600;
+                border: 1px solid var(--color-primary);
+                border-radius: 20px;
+                padding: 10px 18px;
+                transition: 0.3s ease;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+                display: block;
+            }
+
+            .navbar ul li a:hover,
+            .navbar ul li a.active {
+                color: white;
+                background: var(--color-primary);
+            }
+
+            /* ─── HERO BANNER ──────────────────────────────────────────── */
+            .hero {
+                background: linear-gradient(135deg, var(--color-primary), #4aa86f);
+                color: white;
+                text-align: center;
+                padding: 90px 20px;
+            }
+
+            .hero h1 {
+                font-size: 3.2rem;
+                margin-bottom: 15px;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+                opacity: 0.95;
+            }
+
+            /* ─── MAIN CONTAINER ───────────────────────────────────────── */
+            .container {
+                width: 90%;
+                max-width: 1000px;
+                margin: auto;
+                padding: 70px 0;
+            }
+
+            .privacy-card {
+                background: rgba(255,255,255,0.8);
+                backdrop-filter: blur(10px);
+                border: 1px solid var(--color-border);
+                border-radius: 24px;
+                padding: 50px;
+                box-shadow: 0 10px 35px rgba(0,0,0,0.05);
+            }
+
+            .section {
+                margin-bottom: 40px;
+            }
+
+            .section:last-child {
+                margin-bottom: 0;
+            }
+
+            .section h2 {
+                color: var(--color-primary);
+                margin-bottom: 15px;
+                font-size: 1.7rem;
+                display: inline-block;
+            }
+
+            .section p {
+                margin-top: 18px;
+                font-size: 1rem;
+            }
+
+            .highlight-box {
+                background: var(--color-input-bg);
+                border-left: 5px solid var(--color-primary);
+                padding: 20px;
+                border-radius: 14px;
+                margin-top: 20px;
+            }
+
+            .highlight-box strong {
+                color: var(--color-primary);
+            }
+
+            ul {
+                margin-top: 15px;
+                padding-left: 20px;
+            }
+
+            ul li {
+                margin-bottom: 10px;
+            }
+
+            /* ─── FOOTER ───────────────────────────────────────────────── */
+            footer {
+                width: 100%;
+                color: var(--color-dark);
+                padding: 30px 8%;
+                border: 1px solid var(--color-border);
+                border-radius: 25px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+                background: var(--color-input-bg);
+                margin-top: 20px;
+            }
+
+            .footerContainer {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                gap: 24px;
+            }
+
+            .footerBrand { flex: 1 1 220px; }
+            .footerBrand img { width: 200px; height: auto; margin-bottom: 12px; }
+            .footerBrand p { color: var(--color-dark); line-height: 1.7; font-size: 15px; max-width: 280px; }
+
+            .footerSection { flex: 0 0 auto; }
+            .footerSection h3 { margin-bottom: 18px; font-size: 17px; }
+
+            .footerLinks { list-style: none; padding: 0; }
+            .footerLinks li { margin-bottom: 12px; }
+            .footerLinks a { color: var(--color-dark); text-decoration: none; transition: 0.3s ease; }
+            .footerLinks a:hover { color: var(--color-primary); }
+
+            .contactInfo p { margin-bottom: 12px; color: var(--color-dark); line-height: 1.6; }
+
+            .socials { display: flex; gap: 14px; margin-top: 18px; }
+            .socials a {
+                width: 42px; height: 42px;
+                border-radius: 50%;
+                background: var(--color-dark);
+                display: flex; align-items: center; justify-content: center;
+                text-decoration: none; color: white;
+                transition: 0.3s ease; font-size: 16px;
+            }
+            .socials a:hover { background: var(--color-primary); transform: translateY(-3px); }
+
+            .footerBottom {
+                border-top: 1px solid var(--color-dark);
+                margin-top: 50px;
+                padding-top: 24px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 12px;
+            }
+            .footerBottom p { color: var(--color-dark); font-size: 14px; }
+
+            /* ─── TABLET  ≤ 768px ──────────────────────────────────────── */
+            @media (max-width: 768px) {
+
+                /* Show hamburger, hide nav links */
+                .hamburger { display: flex; }
+
+                .navbar {
+                    position: fixed;
+                    top: 0;
+                    right: -100%;
+                    width: 70%;
+                    max-width: 300px;
+                    height: 100vh;
+                    background: #ffffff;
+                    box-shadow: -4px 0 20px rgba(0,0,0,0.1);
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    transition: right 0.35s ease;
+                    z-index: 1050;
+                }
+
+                .navbar.open { right: 0; }
+
+                .navbar ul {
+                    flex-direction: column;
+                    gap: 20px;
+                    width: 100%;
+                    padding: 0 30px;
+                    align-items: stretch;
+                }
+
+                .navbar ul li a {
+                    text-align: center;
+                    border-radius: 14px;
+                    padding: 14px 18px;
+                    font-size: 16px;
+                }
+
+                /* Overlay behind menu */
+                .nav-overlay {
+                    display: none;
+                    position: fixed;
+                    inset: 0;
+                    background: rgba(0,0,0,0.35);
+                    z-index: 1040;
+                }
+                .nav-overlay.open { display: block; }
+
+                /* Hero */
+                .hero h1 { font-size: 2.4rem; }
+                .hero { padding: 60px 20px; }
+
+                /* Privacy card */
+                .privacy-card { padding: 30px 22px; }
+
+                .section h2 { font-size: 1.4rem; }
+
+                /* Footer */
+                footer { padding: 24px 5%; border-radius: 16px; margin-top: 14px; }
+                .footerContainer { flex-direction: column; gap: 28px; }
+                .footerBrand img { width: 160px; }
+                .footerSection h3 { font-size: 15px; margin-bottom: 12px; }
+                .footerLinks li { margin-bottom: 10px; }
+                .contactInfo p { font-size: 14px; margin-bottom: 8px; }
+                .socials { gap: 10px; margin-top: 14px; }
+                .socials a { width: 38px; height: 38px; font-size: 14px; }
+                .footerBottom { margin-top: 28px; padding-top: 18px; flex-direction: column; align-items: flex-start; gap: 10px; }
+                .footerBottom p { font-size: 13px; }
+            }
+
+            /* ─── MOBILE  ≤ 480px ──────────────────────────────────────── */
+            @media (max-width: 480px) {
+
+                header { padding: 0 20px; height: 68px; }
+                .logo-wrap img { width: 120px; }
+
+                .hero h1 { font-size: 1.9rem; }
+                .hero p { font-size: 1rem; }
+
+                .container { padding: 40px 0; }
+
+                .privacy-card { padding: 22px 16px; border-radius: 16px; }
+
+                .section h2 { font-size: 1.25rem; }
+
+                footer { padding: 20px 4%; border-radius: 12px; }
+                .footerContainer { gap: 22px; }
+                .footerBrand img { width: 130px; }
+                .footerBrand p { font-size: 13px; }
+                .footerSection h3 { font-size: 14px; }
+                .socials a { width: 34px; height: 34px; font-size: 13px; }
+                .footerBottom { margin-top: 20px; padding-top: 14px; }
+                .footerBottom p { font-size: 12px; }
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- Overlay (closes menu on tap) -->
+        <div class="nav-overlay" id="navOverlay" onclick="closeMenu()"></div>
+
+        <header>
+            <a href="../home" class="logo-wrap">
+                <img src="../resources/logo.png" alt="Ctrl Alt Deliver Logo" />
+            </a>
+
+            <!-- Hamburger button -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="navbar" id="navbar">
+                <ul>
+                    <li><a href="../home">Home</a></li>
+                    <li><a href="../cart">My Cart</a></li>
+                    <li><a href="../pages/AboutUs.html">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Hero Banner -->
+        <div class="hero">
+            <h1>Privacy Policy</h1>
+            <p>How we handle and protect your information</p>
+        </div>
+
+        <div class="container">
+
+            <div class="privacy-card">
+
+                <div class="section">
+                    <h2>Introduction</h2>
+                    <p>
+                        At <strong>Ctrl Alt Deliver</strong>, we value your privacy
+                        and are committed to protecting your personal information.
+                        This privacy policy explains what information we collect,
+                        how we use it, and how we keep it secure.
+                    </p>
+                </div>
+
+                <div class="section">
+                    <h2>Information We Collect</h2>
+                    <p>
+                        We only collect limited information necessary for user
+                        identification and communication purposes.
+                    </p>
+                    <div class="highlight-box">
+                        <strong>We only collect:</strong>
+                        <ul>
+                            <li>Name</li>
+                            <li>Email Address</li>
+                            <li>Contact Number</li>
+                        </ul>
+                    </div>
+                    <p>
+                        This information is used solely to identify users,
+                        communicate regarding orders or support, and maintain
+                        account-related services.
+                    </p>
+                </div>
+
+                <div class="section">
+                    <h2>No Tracking Policy</h2>
+                    <p>
+                        Ctrl Alt Deliver does not perform user tracking,
+                        behavioral monitoring, or unnecessary data collection.
+                    </p>
+                    <div class="highlight-box">
+                        <strong>We do not:</strong>
+                        <ul>
+                            <li>Track browsing activity</li>
+                            <li>Sell user data</li>
+                            <li>Use invasive analytics</li>
+                            <li>Share personal data with third parties</li>
+                            <li>Collect unnecessary private information</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>Data Security</h2>
+                    <p>
+                        We take reasonable measures to protect user information
+                        from unauthorized access, misuse, or disclosure.
+                    </p>
+                    <p>
+                        Your information is handled responsibly and used only
+                        for platform-related communication and identification.
+                    </p>
+                </div>
+
+                <div class="section">
+                    <h2>Policy Updates</h2>
+                    <p>
+                        Ctrl Alt Deliver may update this privacy policy when
+                        necessary to improve transparency or comply with legal
+                        requirements. Any updates will be reflected on this page.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="footerContainer">
+
+                <div class="footerBrand">
+                    <a href="../home" style="text-decoration:none">
+                        <img src="../resources/logo.png" alt="Logo" />
+                    </a>
+                    <p>Fast, reliable, and smart delivery solutions designed to simplify your online shopping experience.</p>
+                    <div class="socials">
+                        <a href="#">F</a>
+                        <a href="#">I</a>
+                        <a href="#">X</a>
+                    </div>
+                </div>
+
+                <div class="footerSection">
+                    <h3>Quick Links</h3>
+                    <ul class="footerLinks">
+                        <li><a href="../home">Home</a></li>
+                        <li><a href="../cart">My Cart</a></li>
+                        <li><a href="../pages/aboutus.html">About Us</a></li>
+                        <li><a href="../pages/privacy.html">Privacy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footerSection">
+                    <h3>Contact</h3>
+                    <div class="contactInfo">
+                        <p>Pokhara, Nepal</p>
+                        <p>support@ctrlaltdeliver.com</p>
+                        <p>+977 98XXXXXXXX</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footerBottom">
+                <p>© 2026 CTRL ALT DELIVER. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+        <script>
+            function toggleMenu() {
+                const hamburger = document.getElementById('hamburger');
+                const navbar    = document.getElementById('navbar');
+                const overlay   = document.getElementById('navOverlay');
+                const isOpen    = hamburger.classList.toggle('open');
+                navbar.classList.toggle('open', isOpen);
+                overlay.classList.toggle('open', isOpen);
+                document.body.style.overflow = isOpen ? 'hidden' : '';
+            }
+
+            function closeMenu() {
+                document.getElementById('hamburger').classList.remove('open');
+                document.getElementById('navbar').classList.remove('open');
+                document.getElementById('navOverlay').classList.remove('open');
+                document.body.style.overflow = '';
+            }
+
+            // Close menu when a nav link is clicked
+            document.querySelectorAll('.navbar ul li a').forEach(link => {
+                link.addEventListener('click', closeMenu);
+            });
+        </script>
+
+    </body>
+</html>

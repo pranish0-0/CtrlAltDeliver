@@ -1,0 +1,264 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : May 20, 2026, 2:46:12 PM
+    Author     : Pranish
+*/
+
+
+footer {
+    width: 100%;
+    color: var(--color-dark);
+    padding: 30px 8%;
+    border: 1px solid var(--color-border);
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    background: var(--color-input-bg);
+    margin-top: 20px;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 24px;
+}
+
+.footerBrand .logo img {
+    width: 300px;
+    height: auto;
+}
+
+.footerSection {
+    flex: 0 0 auto;
+}
+
+.footerBrand h1 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.footerBrand p {
+    color: var(--color-dark);
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+.footerSection h3 {
+    margin-bottom: 18px;
+    font-size: 17px;
+}
+
+.footerLinks {
+    list-style: none;
+}
+
+.footerLinks li {
+    margin-bottom: 12px;
+}
+
+.footerLinks a {
+    color: var(--color-dark);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.footerLinks a:hover {
+    color: var(--color-primary);
+}
+
+.contactInfo p {
+    margin-bottom: 12px;
+    color: var(--color-dark);
+    line-height: 1.6;
+}
+
+.socials {
+    display: flex;
+    gap: 14px;
+    margin-top: 18px;
+}
+
+.socials a {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--color-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease;
+    font-size: 16px;
+}
+
+.socials a:hover {
+    background: var(--color-primary);
+    color: var(--color-light);
+    transform: translateY(-3px);
+}
+
+.footerBottom {
+    border-top: 1px solid var(--color-dark);
+    margin-top: 50px;
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.footerBottom p {
+    color: var(--color-dark);
+    font-size: 14px;
+}
+
+.footerPolicies {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footerPolicies a {
+    color: var(--color-dark);
+    text-decoration: none;
+    transition: 0.3s ease;
+    font-size: 14px;
+}
+
+.footerPolicies a:hover {
+    color: var(--color-dark);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   MOBILE BREAKPOINT  ≤ 768 px
+   ═══════════════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+
+    footer {
+        padding: 24px 5%;
+        border-radius: 16px;
+        margin-top: 14px;
+    }
+
+    /* Stack columns vertically */
+    .footerContainer {
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    .footerBrand h1 {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    .footerBrand p {
+        font-size: 14px;
+    }
+
+    /* Logo slightly smaller */
+    .footerBrand .logo img {
+        width: 180px;
+    }
+
+    .footerSection h3 {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+
+    .footerLinks li {
+        margin-bottom: 10px;
+    }
+
+    .contactInfo p {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .socials {
+        gap: 10px;
+        margin-top: 14px;
+    }
+
+    .socials a {
+        width: 38px;
+        height: 38px;
+        font-size: 14px;
+    }
+
+    .footerBottom {
+        margin-top: 28px;
+        padding-top: 18px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .footerBottom p {
+        font-size: 13px;
+    }
+
+    .footerPolicies {
+        gap: 14px;
+    }
+
+    .footerPolicies a {
+        font-size: 13px;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   EXTRA-SMALL  ≤ 480 px
+   ═══════════════════════════════════════════════════════════════ */
+@media (max-width: 480px) {
+
+    footer {
+        padding: 20px 4%;
+        border-radius: 12px;
+    }
+
+    .footerContainer {
+        gap: 22px;
+    }
+
+    .footerBrand h1 {
+        font-size: 20px;
+    }
+
+    .footerBrand .logo img {
+        width: 150px;
+    }
+
+    .footerBrand p {
+        font-size: 13px;
+    }
+
+    .footerSection h3 {
+        font-size: 14px;
+    }
+
+    .socials a {
+        width: 34px;
+        height: 34px;
+        font-size: 13px;
+    }
+
+    .footerBottom {
+        margin-top: 20px;
+        padding-top: 14px;
+    }
+
+    .footerBottom p,
+    .footerPolicies a {
+        font-size: 12px;
+    }
+
+    .footerPolicies {
+        gap: 10px;
+    }
+}

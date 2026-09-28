@@ -1,0 +1,109 @@
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 32px;
+    margin: 100px auto;
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    
+}
+
+.container h2 {
+    text-align: center;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: var(--color-dark);
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    gap: 12px;
+}
+
+.flex .input-span {
+    flex: 1;
+}
+
+.input-span {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.label {
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form input {
+    width: 100%;
+    padding: 14px 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--color-input-bg);
+    outline: 2px solid var(--color-dark);
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+
+.form input:focus {
+    outline: 2px solid var(--color-primary);
+}
+
+.submit {
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--color-dark);
+    color: var(--clr);
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.submit:hover {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.text {
+    text-align: center;
+    color: var(--color-dark);
+    font-size: 14px;
+}
+
+.text a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.text a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    margin: 0;
+    color: red;
+    font-size: 14px;
+}

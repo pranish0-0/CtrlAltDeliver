@@ -1,0 +1,30 @@
+# Maven build output
+target/
+
+# Java crash dumps
+hs_err_pid*.log
+replay_pid*.log
+
+# NetBeans
+nbactions.xml
+.nb-gradle/
+build/
+nbdist/
+dist/
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment / secrets
+.env
+.env.*
+desktop.ini

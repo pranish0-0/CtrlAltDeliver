@@ -1,0 +1,317 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : May 17, 2026, 12:39:32 PM
+    Author     : Pranish
+*/
+/*Greetings*/
+.greeting{
+    margin: 20px auto 0 auto;
+    min-width: 95%;
+}
+.subtitle{
+    color: #666;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.title{
+    font-size: 58px;
+    line-height: 1.1;
+    margin: 0;
+
+    color: var(--color-dark);
+}
+/*  Hero wrapper */
+.hero {
+    width: 95vw;
+    margin:    28px auto;
+    padding:   0 24px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width:     100%;
+    position:      relative;
+    margin:        auto;
+    overflow:      hidden;
+    box-shadow:    12px 12px 12px rgba(0,180,0,0.2);
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width:      100%;
+    height:     380px;
+    object-fit: cover;
+    display:    block;
+    filter:     brightness(0.72);
+    border-radius: 15px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor:        pointer;
+    position:      absolute;
+    top:           50%;
+    width:         auto;
+    margin-top:    -22px;
+    padding:       14px 18px;
+    color:         white;
+    font-weight:   bold;
+    font-size:     18px;
+    transition:    0.6s ease;
+    border-radius: 6px;
+    user-select:   none;
+    color: var(--color-light);
+}
+
+/* Position the "next button" to the right */
+.next {
+    right:         0;
+    border-radius: 6px
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    color: white;
+    background: var(--color-primary);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor:           pointer;
+    height:           10px;
+    width:            10px;
+    margin:           0 4px;
+    background-color: #dcdcdc;
+    border-radius:    50%;
+    display:          inline-block;
+    transition:       background-color 0.6s ease, width 0.3s ease;
+}
+
+/* Active / hover dot — themed pill */
+.dactive, .dot:hover {
+    background-color: var(--color-primary);
+    width:            24px;
+    border-radius:    999px;
+}
+
+/* Fading animation */
+.fade {
+    animation-name:     fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+    to   {
+        opacity: 1;
+    }
+}
+
+/* Dots row padding */
+.hero > div {
+    padding: 14px 0 4px;
+}
+
+/*Featured Products Section*/
+.featured {
+    margin: 5px 25px 25px 25px;
+}
+.featured h1, .featured h3 {
+    margin: 0;
+}
+.featured h3 {
+    color: var(--color-dark);
+    padding: 5px 0 0 10px;
+}
+.featured_options {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.ProductsContainer {
+    width: 100%;
+    overflow-x: auto;
+    padding: 20px 0 10px 0;
+    scroll-behavior: smooth;
+    
+}
+.ProductsContainer::-webkit-scrollbar {
+    height: 8px;
+}
+.ProductsContainer::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 20px;
+}
+.productCard{
+    min-width: 300px;
+    max-width: 300px;
+    /*border: 1px solid var(--color-primary);*/
+    /*box-shadow: 0 4px 12px rgba(0,0,0,0.08);*/
+    border-radius: 12px;
+    margin: 0 5px;
+    padding: 10px;
+    transition: .3s ease
+}
+.productCard:hover{
+    transform: translateY(-15px);
+    color: var(--color-primary);
+}
+.productImage{
+    width: 100%;
+    height: 220px;
+    background: var(--color-light);
+    border: 2px solid var(--color-border);
+    border-radius: 12px;
+    transition: 0.25s ease;
+    overflow: hidden;
+    
+    /*to center image*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-name{
+    /*margin-top: 0;*/
+    transition: .2s ease;
+    text-decoration: none;
+}
+.productImage img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    transition: 0.3s ease;
+}
+.product-bottom{
+    font-size: 18px;
+}
+.addToCartBtn {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-light);
+    cursor: pointer;
+    margin: 5px 0;
+    padding: 5px 0;
+    background: #86b89a;
+    transition: .5s ease;
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    
+}
+.addToCartBtn:hover{
+    color: var(--color-primary);
+background: linear-gradient(30deg,rgba(140, 156, 148, 1) 0%, rgba(199, 235, 199, 1) 45%, rgba(199, 235, 199, 1) 55%, rgba(140, 156, 148, 1) 100%);
+}
+.CategoryContainer .productCard:hover .productImage{
+    transform: scaleY(1.2);
+    transform: scaleX(.8);
+}
+.CategoryContainer .productCard:hover{
+    color: var(--color-primary);
+    transition: .3s ease;
+}
+.CategoryContainer{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 10px
+}
+
+
+@media (max-width: 768px) {
+
+    /* ── Greeting ── */
+    .greeting {
+        margin: 14px 16px 0;
+        min-width: unset;
+    }
+
+    .title {
+        font-size: 34px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    /* ── Hero slider ── */
+    .hero {
+        width: 100%;
+        margin: 12px auto;
+        padding: 0 12px;
+        box-sizing: border-box;
+    }
+
+    .slideshow-container {
+        box-shadow: 6px 6px 10px rgba(0,180,0,0.15);
+    }
+
+    .mySlides img {
+        height: 190px;
+        border-radius: 10px;
+    }
+
+    .prev, .next {
+        padding: 10px 12px;
+        font-size: 14px;
+        margin-top: -18px;
+    }
+
+    /* ── Featured section ── */
+    .featured {
+        margin: 5px 12px 20px 12px;
+    }
+
+    .featured h1 {
+        font-size: 22px;
+    }
+
+    .featured h3 {
+        font-size: 14px;
+        padding-left: 4px;
+    }
+
+    /* Filter buttons: wrap on small screens */
+    .featured_options {
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 12px 0;
+    }
+
+
+    /* Product cards: slightly narrower, horizontal scroll unchanged */
+    .productCard {
+        min-width: 220px;
+        max-width: 220px;
+    }
+
+    .productImage {
+        height: 165px;
+    }
+
+    .addToCartBtn {
+        font-size: 14px;
+        padding: 6px 0;
+    }
+
+    /* ── Categories: 2-column grid ── */
+    .CategoryContainer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 8px;
+    }
+}
