@@ -131,44 +131,6 @@ target/
 
 Deploy the WAR file to Apache Tomcat and start the server.
 
-## Configuration
-
-Database connection settings should be configured for your local environment.
-
-Do not commit real database passwords, API keys, authentication secrets, or other credentials to the repository.
-
-## Security Note
-
-This repository is a coursework project and contains demonstration data.
-
-The included passwords are stored as BCrypt hashes rather than plaintext passwords. The accounts and associated data are intended only for local development and demonstration.
-
-For a production deployment, additional security measures would be required, including:
-
-* Environment-based secret management
-* Strong password policies
-* CSRF protection
-* Input validation and sanitization
-* Secure session management
-* HTTPS
-* Proper authorization controls
-* Production database credentials and configuration
-
-## Academic Project
-
-This project was developed as part of an academic coursework project at **Informatics College Pokhara**.
-
-The project focuses on applying software development concepts including:
-
-* Object-oriented programming
-* Java web development
-* Database design
-* CRUD operations
-* Authentication and authorization
-* MVC-oriented application structure
-* E-commerce workflows
-* Relational database relationships
-
 ## License
 
 This project was created for academic and educational purposes.
