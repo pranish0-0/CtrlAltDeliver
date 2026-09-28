@@ -50,24 +50,6 @@ The project demonstrates the development of a database-driven Java web applicati
 | BCrypt          | Password hashing                       |
 | Apache Tomcat   | Web application server                 |
 
-## Project Structure
-
-```text
-CtrlAltDeliver/
-├── src/
-│   └── main/
-│       ├── java/
-│       │   └── com/hawagroupc15/ctrlaltdeliver/
-│       └── webapp/
-│           ├── WEB-INF/
-│           ├── resources/
-│           └── *.jsp
-├── pom.xml
-└── .gitignore
-
-ctrl_alt_deliver (3).sql
-README.md
-```
 
 ## Database
 
@@ -76,19 +58,6 @@ The project includes a SQL database dump:
 ```text
 ctrl_alt_deliver (3).sql
 ```
-
-The database contains the tables required by the application, including:
-
-* `users`
-* `categories`
-* `products`
-* `product_images`
-* `cart`
-* `cart_items`
-* `orders`
-* `order_items`
-* `payments`
-* `shipments`
 
 ### Database Setup
 
