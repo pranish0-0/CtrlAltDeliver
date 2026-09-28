@@ -370,10 +370,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `full_name`, `email`, `phone`, `password_hash`, `role`, `profile_image`, `address`, `created_at`, `updated_at`) VALUES
-(1, 'Alex Rivera', 'alex.rivera@ctrlaltdeliver.com', '+977-9841100001', '$2a$10$66SYemUd3Z3vIrmtPQZqhubMOkiAJmtTmt/sjQVvrXsJ03xLF79li', 'ADMIN', 'profiles/alex.jpg', NULL, '2025-01-01 08:00:00', '2026-05-19 06:31:41'),
-(2, 'Nisha Karki', 'nisha.karki@outlook.com', '+977-9845679876', '$2a$10$66SYemUd3Z3vIrmtPQZqhubMOkiAJmtTmt/sjQVvrXsJ03xLF79li', 'MEMBER', 'profiles/nisha.jpg', 'Bhaktapur Durbar Square Area, Bhaktapur 44800', '2025-04-10 15:00:00', '2026-05-19 16:52:10'),
-(3, 'Pranish Poudel', 'pranish.poudel.s25@icp.edu.np', '9816161302', '$2a$10$66SYemUd3Z3vIrmtPQZqhubMOkiAJmtTmt/sjQVvrXsJ03xLF79li', 'MEMBER', NULL, NULL, '2026-05-18 10:20:43', '2026-05-19 16:59:31'),
-(4, 'Deepak Poudel', 'reachdeepakhere@gmail.com', '9840454840', '$2a$10$z6M2Uas47Ut.0EDxTaFAK.frThMnk0wMmpjh0xJYwQ1BUN4GC3Siq', 'MEMBER', NULL, NULL, '2026-05-18 10:24:25', '2026-05-19 16:52:18');
+(1, 'Alex Rivera', 'alex.rivera@ctrlaltdeliver.com', '+977-9841100001', '$2a$10$VyI7fW2Q8FtDFoBlC583uuhCdpuqXAZrnGxbnAb1FaznMCQ.bruTu', 'ADMIN', 'profiles/alex.jpg', NULL, '2025-01-01 08:00:00', '2026-05-19 06:31:41'),
+(2, 'Nisha Karki', 'nisha.karki@outlook.com', '+977-9845679876', '$2a$10$VyI7fW2Q8FtDFoBlC583uuhCdpuqXAZrnGxbnAb1FaznMCQ.bruTu', 'MEMBER', 'profiles/nisha.jpg', 'Bhaktapur Durbar Square Area, Bhaktapur 44800', '2025-04-10 15:00:00', '2026-05-19 16:52:10'),
+(3, 'Falano Poudel', 'falano.poudel@icp.edu.np', '9812349876', '$2a$10$VyI7fW2Q8FtDFoBlC583uuhCdpuqXAZrnGxbnAb1FaznMCQ.bruTu', 'MEMBER', NULL, NULL, '2026-05-18 10:20:43', '2026-05-19 16:59:31'),
+(4, 'Dimkano Poudel', 'example@gmail.com', '9876512345', '$2a$10$VyI7fW2Q8FtDFoBlC583uuhCdpuqXAZrnGxbnAb1FaznMCQ.bruTu', 'MEMBER', NULL, NULL, '2026-05-18 10:24:25', '2026-05-19 16:52:18');
 
 --
 -- Indexes for dumped tables
